@@ -1,0 +1,122 @@
+.pricing-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .pricing-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .pricing-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pricing-card.popular {
+    background: linear-gradient(135deg, #1976d2, #105a8e);
+    color: white;
+  }
+  
+  .pricing-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #1976d2;
+  }
+  
+  .pricing-card.popular .price {
+    color: white;
+  }
+  
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .pricing-card ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-card.popular ul li {
+    color: white;
+  }
+  
+  .pricing-card .cta-button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .pricing-card .cta-button:hover {
+    background-color: #105a8e;
+    transform: translateY(-3px);
+  }
+  
+  .pricing-card.popular .cta-button {
+    background-color: white;
+    color: #1976d2;
+  }
+  
+  .pricing-card.popular .cta-button:hover {
+    background-color: #f0f0f0;
+    color: #105a8e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pricing-header h2 {
+      font-size: 2rem;
+    }
+  
+    .pricing-header p {
+      font-size: 1rem;
+    }
+  
+    .pricing-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .pricing-card .price {
+      font-size: 1.8rem;
+    }
+  
+    .pricing-card ul li {
+      font-size: 0.9rem;
+    }
+  }
+  

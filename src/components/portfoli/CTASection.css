@@ -1,0 +1,58 @@
+.cta-section {
+    padding: 60px 20px;
+    background-color: #1976d2;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    background-color: white;
+    color: #1976d2;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #f4f9ff;
+    color: #105a8e;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cta-content h2 {
+      font-size: 2rem;
+    }
+  
+    .cta-content p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 12px 25px;
+      font-size: 0.9rem;
+    }
+  }
+  

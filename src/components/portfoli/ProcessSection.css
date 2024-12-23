@@ -1,0 +1,130 @@
+.process-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .process-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .process-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .process-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .process-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+  }
+  
+  .timeline-step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .timeline-step.left {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .timeline-step.right {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  
+  .timeline-icon {
+    flex: 0 0 80px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-content {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Connector Line */
+  .process-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background-color: #1976d2;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .process-header h2 {
+      font-size: 2rem;
+    }
+  
+    .process-header p {
+      font-size: 1rem;
+    }
+  
+    .timeline-step {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .timeline-step.right {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .process-timeline::before {
+      left: 0;
+      width: 2px;
+    }
+  
+    .timeline-icon {
+      margin-bottom: 20px;
+      width: 60px;
+      height: 60px;
+    }
+  
+    .timeline-content h3 {
+      font-size: 1.3rem;
+    }
+  
+    .timeline-content p {
+      font-size: 0.9rem;
+    }
+  }
+  

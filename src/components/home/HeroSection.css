@@ -1,0 +1,144 @@
+.hero-modern {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  height: 100vh;
+  background-color: #f4f9ff;
+}
+
+.hero-modern-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.hero-modern-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-modern-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.hero-modern-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.cta-primary,
+.cta-secondary {
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-primary {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+}
+
+.cta-primary:hover {
+  background-color: #105a8e;
+  transform: translateY(-3px);
+}
+
+.cta-secondary {
+  background-color: transparent;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+}
+
+.cta-secondary:hover {
+  background-color: #1976d2;
+  color: white;
+}
+
+/* Responsive Image */
+.hero-modern-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-modern-image img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide Image for Tablet and Smaller Screens */
+@media (max-width: 1024px) {
+  .hero-modern {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .hero-modern-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-modern-content h1 {
+    font-size: 2.5rem; /* Smaller heading */
+  }
+
+  .hero-modern-content p {
+    font-size: 1.1rem; /* Adjusted paragraph font size */
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    padding: 12px 20px; /* Smaller buttons */
+    font-size: 0.9rem;
+  }
+
+  .hero-modern-image {
+    display: none; /* Hide image for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-modern-content {
+    text-align: center; /* Center text for small screens */
+  }
+  .hero-modern {
+    height: auto;
+  }
+  .hero-modern-content h1 {
+    font-size: 1.6rem; /* Further reduce heading size */
+  }
+
+  .hero-modern-content p {
+    font-size: 1rem; /* Reduce paragraph size */
+  }
+
+  .hero-modern-buttons {
+    justify-content: center; /* Center buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap if needed */
+    gap: 15px;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    padding: 10px 15px; /* Smaller padding */
+    font-size: 0.8rem; /* Smaller font size */
+  }
+
+  .hero-modern-image {
+    display: none; /* Hide image for mobile */
+  }
+}
