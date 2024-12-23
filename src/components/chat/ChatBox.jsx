@@ -3,7 +3,7 @@ import './Chatbox.css';
 import { Send, Close } from '@mui/icons-material';
 
 const Chatbox = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [messages, setMessages] = useState([]);
 
   const toggleChatbox = () => {
