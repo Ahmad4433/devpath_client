@@ -10,6 +10,7 @@ import TeamSection from "./TeamSection";
 import PricingSection from "./PricingSection";
 import SuggestionSection from "./SuggestionSection";
 import useScroll from "../../hooks/useScroll";
+
 const Home = () => {
   useScroll();
 
@@ -25,6 +26,7 @@ const Home = () => {
       <PricingSection />
       <TeamSection />
       <SuggestionSection />
+ 
     </div>
   );
 };
