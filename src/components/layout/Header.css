@@ -91,6 +91,20 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.logo_title {
+  font-family: "Fira+Code";
+}
+
+.logo_header {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0.2rem;
+}
+
+.logo_header img {
+  height: 32px;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
   .menu {
@@ -110,7 +124,7 @@
   .menu.menu-open {
     display: flex;
     width: 100%;
-    right: 0;  
+    right: 0;
   }
 
   .hamburger {

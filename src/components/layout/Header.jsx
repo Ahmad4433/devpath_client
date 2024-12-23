@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
+import logo from "../../assets/logo192.svg";
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,8 +28,11 @@ const Header = () => {
       <div className="header-container">
         {/* Logo */}
         <div className="logo">
-          <Link onClick={(event) => navigateMenuHandler(event, "/")}>
-            BrandLogo
+          <Link className="logo_header" onClick={(event) => navigateMenuHandler(event, "/")}>
+            <span className="logo_title">
+              DEV<span className="path_title">PATH</span>
+            </span>
+            <img src={logo} />
           </Link>
         </div>
 
