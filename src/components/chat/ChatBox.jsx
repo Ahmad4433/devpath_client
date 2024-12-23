@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Chatbox.css';
 import { Send, Close } from '@mui/icons-material';
 
 const Chatbox = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
+  const messagesEndRef = useRef(null); // Reference for scrolling
 
   const toggleChatbox = () => {
     setIsOpen(!isOpen);
@@ -21,12 +22,19 @@ const Chatbox = () => {
     }
   };
 
+  // Auto-scroll to the bottom when messages change
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [messages]);
+
   return (
     <div className="chatbox-container">
       {/* Minimized Chat Icon */}
       {!isOpen && (
         <button className="chatbox-toggle" onClick={toggleChatbox}>
-          💬 
+          💬
         </button>
       )}
 
@@ -49,6 +57,7 @@ const Chatbox = () => {
                 </div>
               ))
             )}
+            <div ref={messagesEndRef} /> {/* This will always scroll to here */}
           </div>
           <form className="chatbox-input" onSubmit={handleSendMessage}>
             <input
