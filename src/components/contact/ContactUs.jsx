@@ -1,7 +1,7 @@
-import React from 'react';
-import './ContactPage.css';
-import { motion } from 'framer-motion';
-import { Email, Phone, LocationOn } from '@mui/icons-material';
+import React from "react";
+import "./ContactPage.css";
+import { motion } from "framer-motion";
+import { Email, Phone, LocationOn } from "@mui/icons-material";
 
 const ContactPage = () => {
   return (
@@ -14,7 +14,10 @@ const ContactPage = () => {
           transition={{ duration: 1 }}
         >
           <h1>Contact Us</h1>
-          <p>We’re here to help you with your questions or project inquiries. Let’s get in touch!</p>
+          <p>
+            We’re here to help you with your questions or project inquiries.
+            Let’s get in touch!
+          </p>
         </motion.div>
       </section>
 
@@ -34,7 +37,12 @@ const ContactPage = () => {
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" placeholder="Your Email" required />
+              <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
             </div>
             <div className="form-group">
               <label htmlFor="subject">Subject</label>
@@ -42,9 +50,16 @@ const ContactPage = () => {
             </div>
             <div className="form-group">
               <label htmlFor="message">Message</label>
-              <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+              <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
             </div>
-            <button type="submit" className="submit-button">Submit</button>
+            <button type="submit" className="submit-button">
+              Submit
+            </button>
           </motion.form>
         </div>
       </section>
@@ -60,13 +75,13 @@ const ContactPage = () => {
           <h2>Get in Touch</h2>
           <div className="details">
             <div className="detail-item">
-              <Phone /> <p>+123 456 7890</p>
+              <Phone /> <p>+92310-4641760</p>
             </div>
             <div className="detail-item">
-              <Email /> <p>support@example.com</p>
+              <Email /> <p>pathdev91@gmail.com</p>
             </div>
             <div className="detail-item">
-              <LocationOn /> <p>123 Business Avenue, New York, USA</p>
+              <LocationOn /> <p>15 B Commercial Al Kabir Town Phase-2 Lahore</p>
             </div>
           </div>
         </motion.div>

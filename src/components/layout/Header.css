@@ -135,4 +135,18 @@
     text-align: center;
     font-size: 1.2rem;
   }
+
+  .header {
+    padding: 10px;
+  }
+
+  .logo_title {
+    font-size: 15px;
+  }
+  .header img {
+    height: 28px;
+  }
+  .menu{
+    top: 42px;
+  }
 }

@@ -5,7 +5,10 @@ import Layout from "./components/layout/Layout";
 import Services from "./components/services/Services";
 import Portfolio from "./components/portfoli/Portfolio";
 import Contact from "./components/contact/Contact";
+
 const App = () => {
+
+
   return (
     <Routes>
       <Route element={<Layout />}>

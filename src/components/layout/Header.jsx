@@ -2,11 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/logo192.svg";
+import useGeneralHooks from "../../hooks/useGeneralHooks";
+import { uiActions } from "../../store/slices/ui-slice";
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
   const headerRef = useRef();
+  const { dispatch } = useGeneralHooks();
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -21,6 +24,7 @@ const Header = () => {
 
   useEffect(() => {
     const height = headerRef.current.offsetHeight;
+    dispatch(uiActions.setHeaderHeight(height));
   }, []);
 
   return (
@@ -28,7 +32,10 @@ const Header = () => {
       <div className="header-container">
         {/* Logo */}
         <div className="logo">
-          <Link className="logo_header" onClick={(event) => navigateMenuHandler(event, "/")}>
+          <Link
+            className="logo_header"
+            onClick={(event) => navigateMenuHandler(event, "/")}
+          >
             <span className="logo_title">
               DEV<span className="path_title">PATH</span>
             </span>

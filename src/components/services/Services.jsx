@@ -5,9 +5,13 @@ import PricingSection from "../home/PricingSection";
 import CaseStudiesSection from "./CaseStudiesSection";
 import TrustSection from "./TrustSection";
 import FAQSection from "../home/FAQSection";
+import useGeneralHooks from "../../hooks/useGeneralHooks";
+import useScroll from "../../hooks/useScroll";
 const Services = () => {
+  const { ui } = useGeneralHooks();
+  useScroll();
   return (
-    <div style={{ marginTop: "73px", overflowX: "hidden" }}>
+    <div style={{ marginTop: ui.headerHeight + "px", overflowX: "hidden" }}>
       <ServicesPage />
       <WorkflowSection />
       <TrustSection />

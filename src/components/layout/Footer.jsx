@@ -1,7 +1,13 @@
 import React from "react";
 import "./FooterSection.css";
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, LinkedIn, Instagram } from "@mui/icons-material";
+import {
+  Facebook,
+  Twitter,
+  LinkedIn,
+  Instagram,
+  YouTube,
+} from "@mui/icons-material";
 
 const FooterSection = () => {
   return (
@@ -33,39 +39,46 @@ const FooterSection = () => {
         </div>
         <div className="footer-column">
           <h3>Contact Us</h3>
-          <p>Email: support@example.com</p>
-          <p>Phone: +123 456 7890</p>
+          <p>pathdev91@gmail.com</p>
+          <p>Phone: +92310-4641760</p>
         </div>
         <div className="footer-column">
           <h3>Follow Us</h3>
           <div className="social-icons">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61566377880916"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Facebook />
             </a>
-            <a
+            {/* <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Twitter />
-            </a>
+            </a> */}
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/dev-path-74638732b/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <LinkedIn />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/pathdev91/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Instagram />
+            </a>
+            <a
+              href="https://www.youtube.com/@DEVPATH-i8k"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <YouTube />
             </a>
           </div>
         </div>

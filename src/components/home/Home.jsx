@@ -9,7 +9,10 @@ import FAQSection from "./FAQSection";
 import TeamSection from "./TeamSection";
 import PricingSection from "./PricingSection";
 import SuggestionSection from "./SuggestionSection";
+import useScroll from "../../hooks/useScroll";
 const Home = () => {
+  useScroll();
+
   return (
     <div style={{ marginTop: "43px" }}>
       <HeroSection />
