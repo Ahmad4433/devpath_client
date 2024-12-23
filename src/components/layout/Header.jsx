@@ -64,6 +64,12 @@ const Header = () => {
             Portfolio
           </Link>
           <Link
+            onClick={(event) => navigateMenuHandler(event, "/blog")}
+            className="menu-item"
+          >
+            Blog
+          </Link>
+          <Link
             onClick={(event) => navigateMenuHandler(event, "/contact")}
             className="menu-item"
           >

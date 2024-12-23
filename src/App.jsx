@@ -5,10 +5,9 @@ import Layout from "./components/layout/Layout";
 import Services from "./components/services/Services";
 import Portfolio from "./components/portfoli/Portfolio";
 import Contact from "./components/contact/Contact";
-
+import Blog from "./components/blog/Blog";
+import SingleBlog from "./components/blog/SigleBlog";
 const App = () => {
-
-
   return (
     <Routes>
       <Route element={<Layout />}>
@@ -16,6 +15,8 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/detail" element={<SingleBlog />} />
       </Route>
     </Routes>
   );
