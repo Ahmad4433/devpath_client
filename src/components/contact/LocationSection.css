@@ -1,0 +1,30 @@
+.location-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .location-header {
+    margin-bottom: 30px;
+  }
+  
+  .location-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .location-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .map-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  

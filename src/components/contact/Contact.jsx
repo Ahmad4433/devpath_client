@@ -4,6 +4,7 @@ import SocialMediaSection from "./SocialMediaSection";
 import FAQSection from "../home/FAQSection";
 import useGeneralHooks from "../../hooks/useGeneralHooks";
 import useScroll from "../../hooks/useScroll";
+import LocationSection from "./LocationSection";
 const Contact = () => {
   const { ui } = useGeneralHooks();
   useScroll();
@@ -11,6 +12,7 @@ const Contact = () => {
     <div style={{ marginTop: ui.headerHeight + "px", overflowX: "hidden" }}>
       <ContactPage />
       {/* <SocialMediaSection /> */}
+      <LocationSection />
       <FAQSection />
     </div>
   );
