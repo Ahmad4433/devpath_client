@@ -1,7 +1,7 @@
 /* WhatsApp Button */
 .whatsapp-button {
     position: fixed;
-    bottom: 90px; /* Place above the chat icon */
+    bottom: 20px; /* Place above the chat icon */
     right: 20px;
     width: 60px;
     height: 60px;
