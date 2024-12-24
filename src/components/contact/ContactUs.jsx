@@ -75,7 +75,7 @@ const ContactPage = () => {
           <h2>Get in Touch</h2>
           <div className="details">
             <div className="detail-item">
-              <Phone /> <p>+92310-4641760</p>
+              <Phone /> <p>+92321-1963933</p>
             </div>
             <div className="detail-item">
               <Email /> <p>pathdev91@gmail.com</p>

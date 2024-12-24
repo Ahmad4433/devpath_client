@@ -1,6 +1,7 @@
-import React from 'react';
-import './CTASection.css';
-import { motion } from 'framer-motion';
+import React from "react";
+import "./CTASection.css";
+import { motion } from "framer-motion";
+import { whatsappLink2 } from "../whatsapp/Whatsapp";
 
 const CTASection = () => {
   return (
@@ -13,9 +14,12 @@ const CTASection = () => {
       >
         <h2>Ready to Start Your Project?</h2>
         <p>
-          Let’s turn your ideas into reality. Get in touch with us to discuss your next big project.
+          Let’s turn your ideas into reality. Get in touch with us to discuss
+          your next big project.
         </p>
-        <button className="cta-button">Contact Us</button>
+        <button onClick={whatsappLink2} className="cta-button">
+          Contact Us
+        </button>
       </motion.div>
     </section>
   );

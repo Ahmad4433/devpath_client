@@ -3,6 +3,7 @@ import "./ServicePage.css";
 import { motion } from "framer-motion";
 import { Code, DesignServices, Support, Analytics } from "@mui/icons-material";
 import ServicesSection from "../home/Servicesection";
+import { whatsappLink2 } from "../whatsapp/Whatsapp";
 const services = [
   {
     title: "Web Development",
@@ -80,7 +81,9 @@ const ServicesPage = () => {
             Contact us today to discuss your project and take the first step
             toward success.
           </p>
-          <button className="cta-button">Get Started</button>
+          <button onClick={whatsappLink2} className="cta-button">
+            Get Started
+          </button>
         </motion.div>
       </section>
     </div>

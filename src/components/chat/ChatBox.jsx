@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './Chatbox.css';
-import { Send, Close } from '@mui/icons-material';
+import React, { useState, useEffect, useRef } from "react";
+import "./Chatbox.css";
+import { Send, Close } from "@mui/icons-material";
 
 const Chatbox = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,19 +13,19 @@ const Chatbox = () => {
 
   const handleSendMessage = (e) => {
     e.preventDefault();
-    const messageInput = document.getElementById('chat-input');
+    const messageInput = document.getElementById("chat-input");
     const message = messageInput.value.trim();
 
     if (message) {
-      setMessages([...messages, { text: message, sender: 'user' }]);
-      messageInput.value = '';
+      setMessages([...messages, { text: message, sender: "user" }]);
+      messageInput.value = "";
     }
   };
 
   // Auto-scroll to the bottom when messages change
   useEffect(() => {
     if (messagesEndRef.current) {
-      messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [messages]);
 
