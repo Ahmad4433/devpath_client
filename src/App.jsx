@@ -7,7 +7,9 @@ import Portfolio from "./components/portfoli/Portfolio";
 import Contact from "./components/contact/Contact";
 import Blog from "./components/blog/Blog";
 import SingleBlog from "./components/blog/SigleBlog";
+import useAnalytics from "./hooks/useAnalytics";
 const App = () => {
+  useAnalytics();
   return (
     <Routes>
       <Route element={<Layout />}>
