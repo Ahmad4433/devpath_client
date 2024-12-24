@@ -2,8 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./HeroSection.css";
 import heroImg from "../../assets/hero.png";
-
+import useGeneralHooks from "../../hooks/useGeneralHooks";
 const HeroSectionModern = () => {
+  const startedHandler = () => {
+    const windowHeight = window.innerHeight;
+    window.scrollTo({
+      top: windowHeight,
+      behavior: "smooth",
+    });
+  };
+
+  const { navigate } = useGeneralHooks();
   return (
     <div className="hero-modern">
       <div className="hero-modern-content">
@@ -28,8 +37,15 @@ const HeroSectionModern = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <button className="cta-primary">Get Started</button>
-          <button className="cta-secondary">Our Portfolio</button>
+          <button onClick={startedHandler} className="cta-primary">
+            Get Started
+          </button>
+          <button
+            onClick={() => navigate("/portfolio")}
+            className="cta-secondary"
+          >
+            Our Portfolio
+          </button>
         </motion.div>
       </div>
       <motion.div

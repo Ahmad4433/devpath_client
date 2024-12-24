@@ -33,7 +33,7 @@ const services = [
 
 const ServicesPage = () => {
   return (
-    <div className="services-page">
+    <div  className="services-page">
       {/* Hero Section */}
       <section className="services-hero">
         <motion.div
