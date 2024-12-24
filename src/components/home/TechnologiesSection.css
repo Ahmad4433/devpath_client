@@ -1,0 +1,80 @@
+.technologies-section {
+    padding: 60px 20px;
+    background-color: #f4f9ff;
+    text-align: center;
+  }
+  
+  .technologies-header {
+    margin-bottom: 40px;
+  }
+  
+  .technologies-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .technologies-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .technologies-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+  
+  .technology-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .technology-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .emoji-container {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .technology-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .technology-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .technologies-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .technology-card {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .emoji-container {
+      font-size: 2.5rem;
+    }
+  }
+  
