@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <div>
       <Header />
-      <Chatbox />
+      {/* <Chatbox /> */}
       <WhatsAppButton />
       <Outlet />
       <FooterSection />
