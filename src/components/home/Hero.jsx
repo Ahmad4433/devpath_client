@@ -1,20 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import "./HeroSection.css";
 import heroImg from "../../assets/hero.png";
 import useGeneralHooks from "../../hooks/useGeneralHooks";
+import { uiActions } from "../../store/slices/ui-slice";
+
 const HeroSectionModern = () => {
-  const startedHandler = () => {
-    const windowHeight = window.innerHeight;
-    window.scrollTo({
-      top: windowHeight,
-      behavior: "smooth",
-    });
+  const { navigate, ui, dispatch } = useGeneralHooks();
+  const heroRef = useRef();
+  const startedHandler = (event) => {
+    const height = heroRef.current.offsetHeight;
+    window.scrollTo({ top: height, behavior: "smooth" });
   };
 
-  const { navigate } = useGeneralHooks();
   return (
-    <div className="hero-modern">
+    <div ref={heroRef} className="hero-modern">
       <div className="hero-modern-content">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}

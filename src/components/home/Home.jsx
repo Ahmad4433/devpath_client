@@ -26,7 +26,6 @@ const Home = () => {
       <PricingSection />
       <TeamSection />
       <SuggestionSection />
- 
     </div>
   );
 };

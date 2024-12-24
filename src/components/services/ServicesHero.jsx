@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./ServicePage.css";
 import { motion } from "framer-motion";
 import { Code, DesignServices, Support, Analytics } from "@mui/icons-material";
@@ -33,7 +33,7 @@ const services = [
 
 const ServicesPage = () => {
   return (
-    <div  className="services-page">
+    <div id="service_hero" className="services-page">
       {/* Hero Section */}
       <section className="services-hero">
         <motion.div
