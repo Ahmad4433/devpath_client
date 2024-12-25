@@ -2,6 +2,7 @@ import React from "react";
 import "./TeamSection.css";
 import { motion } from "framer-motion";
 import avatar from "../../assets/avatar.png";
+import sunila from "../../assets/sunila.jpeg";
 
 const teamMembers = [
   {
@@ -11,11 +12,11 @@ const teamMembers = [
     image: avatar,
   },
   {
-    name: "Jane Smith",
+    name: "Sunila Jameel",
     role: "Chief Designer",
     description:
       "Creative genius turning ideas into visually stunning designs.",
-    image: avatar,
+    image: sunila,
   },
   {
     name: "Mike Taylor",
