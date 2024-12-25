@@ -22,7 +22,7 @@ const SingleBlog = () => {
   }, [id]);
 
   const handleShare = () => {
-    const blogUrl = `${window.location.origin}/blog?id=${id}`;
+    const blogUrl = `${window.location.origin}/blog/detail?id=${id}`;
     if (navigator.share) {
       navigator
         .share({
