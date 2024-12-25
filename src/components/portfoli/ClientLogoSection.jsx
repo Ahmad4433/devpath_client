@@ -1,15 +1,21 @@
 import React from "react";
 import "./ClientLogosSection.css";
 import { motion } from "framer-motion";
+import logo1 from "../../assets/pngwing.com (17).png";
+import logo2 from "../../assets/pngwing.com (18).png";
+import logo3 from "../../assets/pngwing.com (19).png";
+import logo4 from "../../assets/pngwing.com (20).png";
+import logo5 from "../../assets/pngwing.com (21).png";
+import logo6 from "../../assets/pngwing.com (22).png";
 import avatar from "../../assets/avatar.png";
 
 const clientLogos = [
-  { name: "Company A", logo: avatar },
-  { name: "Company B", logo: avatar },
-  { name: "Company C", logo: avatar },
-  { name: "Company D", logo: avatar },
-  { name: "Company E", logo: avatar },
-  { name: "Company F", logo: avatar },
+  { name: "Company A", logo: logo1 },
+  { name: "Company B", logo: logo2 },
+  { name: "Company C", logo: logo3 },
+  { name: "Company D", logo: logo4 },
+  { name: "Company E", logo: logo5 },
+  { name: "Company F", logo: logo6 },
 ];
 
 const ClientLogosSection = () => {
