@@ -17,7 +17,7 @@ const SingleBlog = () => {
   const id = queryParams.get("id");
 
   useEffect(() => {
-    const blog = blogData[id];
+    const blog = blogData[id - 1];
     setFindedBlog(blog);
   }, [id]);
 
