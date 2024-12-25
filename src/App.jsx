@@ -8,6 +8,7 @@ import Contact from "./components/contact/Contact";
 import Blog from "./components/blog/Blog";
 import SingleBlog from "./components/blog/SigleBlog";
 import useAnalytics from "./hooks/useAnalytics";
+import AddProject from "./components/admin/projetcs/AddProject";
 const App = () => {
   useAnalytics();
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/detail" element={<SingleBlog />} />
+        <Route path="/project/add" element={<AddProject />} />
       </Route>
     </Routes>
   );
