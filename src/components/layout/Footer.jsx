@@ -40,7 +40,7 @@ const FooterSection = () => {
         <div className="footer-column">
           <h3>Contact Us</h3>
           <p>pathdev91@gmail.com</p>
-          <p>Phone: +92310-4641760</p>
+          <p>Phone: +92321-1963933</p>
         </div>
         <div className="footer-column">
           <h3>Follow Us</h3>
