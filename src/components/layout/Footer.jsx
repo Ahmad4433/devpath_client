@@ -67,7 +67,7 @@ const FooterSection = () => {
               <LinkedIn />
             </a>
             <a
-              href="https://www.instagram.com/pathdev91/"
+              href="https://www.instagram.com/idevpath?igsh=N3JpcTdyNWM1cGF5"
               target="_blank"
               rel="noopener noreferrer"
             >
