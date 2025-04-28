@@ -3,13 +3,16 @@ import "./TeamSection.css";
 import { motion } from "framer-motion";
 import avatar from "../../assets/avatar.png";
 import sunila from "../../assets/sunila.jpeg";
+import waqas from '../../assets/waqas.jpeg'
+import ahmad from '../../assets/ahmad.jpeg'
+import bilal from '../../assets/bilal.jpeg'
 
 const teamMembers = [
   {
-    name: "John Doe",
+    name: "Ahmad Shah",
     role: "CEO & Founder",
     description: "Visionary leader with a passion for innovation and growth.",
-    image: avatar,
+    image: ahmad,
   },
   {
     name: "Sunila Jameel",
@@ -19,16 +22,16 @@ const teamMembers = [
     image: sunila,
   },
   {
-    name: "Mike Taylor",
+    name: "Sheikh Bilal",
     role: "Lead Developer",
     description: "Expert in crafting scalable and efficient solutions.",
-    image: avatar,
+    image: bilal,
   },
   {
-    name: "Sara Lee",
+    name: "Sheikh Waqas",
     role: "Marketing Head",
     description: "Strategic thinker driving brand growth and visibility.",
-    image: avatar,
+    image: waqas,
   },
 ];
 
